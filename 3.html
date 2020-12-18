@@ -4,30 +4,83 @@
 <head>
     <title>WEB-JavaScript</title>
     <mata charset="utf-8">
+        <style>
+            body {
+                margin: 0;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            h1 {
+                font-size: 45px;
+                text-align: center;
+                border-bottom: 1px solid gray;
+                margin: 0;
+                padding: 20px;
+            }
+
+            h2 {
+                margin: 0px;
+                padding-top: 15px;
+            }
+
+            ol {
+                border-right: 1px solid gray;
+                widows: 170px;
+                margin: 0;
+                padding: 20px;
+            }
+
+            #grid {
+                display: grid;
+                grid-template-columns: 170px 1fr;
+            }
+
+            #grid ol {
+                padding-left: 33px;
+            }
+
+            #grid #article {
+                padding-left: 20px;
+            }
+        </style>
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    <h2>JavaScript</h2>
-    <p>JavaScript often abbreviated as JS, is a programming language that conforms to the
-        ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has
-        curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+    <div id="grid">
+        <ol>
+            <li><a href="1.html" class="saw">HTML</a></li>
+            <li><a href="2.html" class="saw">CSS</a></li>
+            <li><a href="3.html" class="saw" id="active">JavaScript</a></li>
+        </ol>
+        <div id="article">
+            <h2>JavaScript</h2>
+            <p>JavaScript often abbreviated as JS, is a programming language that conforms to the
+                ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
+                It has
+                curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
 
-        Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[8] JavaScript enables
-        interactive web pages and is an essential part of web applications. The vast majority of websites use it for
-        client-side page behavior,[9] and all major web browsers have a dedicated JavaScript engine to execute it.
+                Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[8] JavaScript
+                enables
+                interactive web pages and is an essential part of web applications. The vast majority of websites use it
+                for
+                client-side page behavior,[9] and all major web browsers have a dedicated JavaScript engine to execute
+                it.
 
-        As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming styles.
-        It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard
-        data structures, and the Document Object Model (DOM). However, the language itself does not include any
-        input/output (I/O), such as networking, storage, or graphics facilities, as the host environment (usually a web
-        browser) provides those APIs.</p>
-    <p>
+                As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming
+                styles.
+                It has application programming interfaces (APIs) for working with text, dates, regular expressions,
+                standard
+                data structures, and the Document Object Model (DOM). However, the language itself does not include any
+                input/output (I/O), such as networking, storage, or graphics facilities, as the host environment
+                (usually a web
+                browser) provides those APIs.</p>
+        </div>
+    </div>
     <div id="disqus_thread"></div>
     <script>
         /**
